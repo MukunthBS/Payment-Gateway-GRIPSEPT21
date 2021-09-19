@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Donation Page</title>
+  </head>
+
+  <body>
+    <header>
+
+      <img
+        class="logo"
+        src="https://internship.thesparksfoundation.info/assests/img/logo.png"
+        width="5%"
+        max-width="5%"
+        height="auto"
+        alt="logo"
+        usemap="#image-map"
+      />
+      <map name="image-map">
+        <area href="index.html" coords="0,0,1302,1330" shape="rect" />
+      </map>
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <h1>Thank You for choosing to donate us!</h1>
+
+      <p>
+        "Making a donation is the ultimate sign of solidarity. Actions speak
+        louder than words."
+
+        <br />
+        <br />
+        <i>Ibrahim Hooper</i>
+      </p>
+
+      <!--Payment Button Integration from Razorpay-->
+
+      <div
+        class="razorpay-embed-btn"
+        data-url="https://pages.razorpay.com/pl_HyutpWvbO2no0H/view"
+        data-text="Click Here to Donate"
+        data-color="#528FF0"
+        data-size="medium"
+      >
+        <script>
+          (function () {
+            var d = document;
+            var x = !d.getElementById("razorpay-embed-btn-js");
+            if (x) {
+              var s = d.createElement("script");
+              s.defer = !0;
+              s.id = "razorpay-embed-btn-js";
+              s.src = "https://cdn.razorpay.com/static/embed_btn/bundle.js";
+              d.body.appendChild(s);
+            } else {
+              var rzp = window["__rzp__"];
+              rzp && rzp.init && rzp.init();
+            }
+          })();
+        </script>
+      </div>
+
+      <!--End of integration-->
+
+      <p class="back"><a href="index.html">Go Back</a></p>
+    </div>
+
+    <p class="cp-text">
+      Copyright &#169; 2021 Mukunth BS for GRIP @ The Sparks Foundation. All
+      rights reserved.
+    </p>
+
+  </body>
+</html>
